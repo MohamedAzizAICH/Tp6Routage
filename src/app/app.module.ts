@@ -7,6 +7,10 @@ import { ListmaterielComponent } from './composants/informatique/listmateriel/li
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
 import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
 import { CommentComponent } from './composants/commentaires/comment/comment.component';
+import { ContactComponent } from './composants/contact/contact.component';
+import { Error404Component } from './composants/error404/error404.component';
+import { AppRoutingModule } from './app-routing.modules';
+import { MenuComponent } from './composants/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +19,14 @@ import { CommentComponent } from './composants/commentaires/comment/comment.comp
     ListmaterielComponent,
     MaterielComponent,
     DetailmaterielComponent,
-    CommentComponent
+    CommentComponent,
+    ContactComponent,
+    Error404Component,
+    MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
